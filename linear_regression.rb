@@ -9,4 +9,10 @@ class RegressionLine
   def sum_x_squared
     @x.map {|e| e*e }.reduce(:+)
   end
+
+  def sum_y
+    @y.reduce {|sum , e| sum + e}
+  end
+
+
 end
