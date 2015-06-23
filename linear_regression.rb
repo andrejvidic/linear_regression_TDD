@@ -1,9 +1,12 @@
 class RegressionLine
 
+  attr_reader :result
+
   def initialize(x_array, y_array)
     @x = x_array
     @y = y_array
     @n = x_array.length
+    @result = [find_a, find_b]
   end
 
   def sum_x_squared
@@ -36,6 +39,10 @@ class RegressionLine
     numerator = ( ( @n * sum_xy ) - ( sum_x * sum_y ) ).to_f
     denominator = ( ( @n * sum_x_squared ) - sum_x_all_squared ).to_f
     (numerator / denominator ).round(4)
+  end
+
+  def to_s
+    p result
   end
 
 end
