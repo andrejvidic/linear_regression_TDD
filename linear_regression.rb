@@ -26,4 +26,10 @@ class RegressionLine
     sum_x * sum_x
   end
 
+  def find_a
+    numerator = ( ( sum_x_squared * sum_y ) - ( sum_x * sum_xy ) ).to_f
+    denominator = ( ( @n * sum_x_squared ) - sum_x_all_squared ).to_f
+    (numerator / denominator ).round(4)
+  end
+
 end
