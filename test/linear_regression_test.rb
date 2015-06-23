@@ -15,5 +15,9 @@ class TestRegressionLine < Minitest::Test
   def test_sum_x_squared
   	assert_equal @reg_1.sum_x_squared, 8875
   end
-  
+
+  def test_sum_y
+  	assert_equal @reg_1.sum_y, 361
+  end
+
 end
