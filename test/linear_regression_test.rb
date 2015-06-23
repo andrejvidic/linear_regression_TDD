@@ -32,4 +32,8 @@ class TestRegressionLine < Minitest::Test
   	assert_equal @reg_1.sum_x_all_squared, 50625
   end
 
+  def test_find_a
+  	assert_equal @reg_1.find_a, 114.381
+  end
+
 end
