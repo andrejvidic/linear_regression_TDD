@@ -14,5 +14,7 @@ class RegressionLine
     @y.reduce {|sum , e| sum + e}
   end
 
-
+  def sum_x
+    @x.reduce {|sum , e| sum + e}
+  end
 end
