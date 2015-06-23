@@ -20,4 +20,8 @@ class TestRegressionLine < Minitest::Test
   	assert_equal @reg_1.sum_y, 361
   end
 
+  def test_sum_x
+  	assert_equal @reg_1.sum_x, 225
+  end
+
 end
