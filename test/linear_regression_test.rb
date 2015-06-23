@@ -40,4 +40,9 @@ class TestRegressionLine < Minitest::Test
   	assert_equal @reg_1.find_b, -1.4457
   end
 
+  def test_proper_result_1
+  	assert_equal @reg_1.result, [114.381, -1.4457]
+  end
+
+
 end
