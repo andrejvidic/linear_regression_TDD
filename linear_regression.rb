@@ -32,4 +32,10 @@ class RegressionLine
     (numerator / denominator ).round(4)
   end
 
+  def find_b
+    numerator = ( ( @n * sum_xy ) - ( sum_x * sum_y ) ).to_f
+    denominator = ( ( @n * sum_x_squared ) - sum_x_all_squared ).to_f
+    (numerator / denominator ).round(4)
+  end
+
 end
