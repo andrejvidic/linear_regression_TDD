@@ -17,4 +17,9 @@ class RegressionLine
   def sum_x
     @x.reduce {|sum , e| sum + e}
   end
+
+  def sum_xy
+    @x.each_with_index.map {|e, index| e * @y[index]}.reduce(:+)
+  end
+  
 end
